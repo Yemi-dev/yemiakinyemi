@@ -15,17 +15,6 @@ body{
     position: relative;
     background-color: black;
     color: set-text-color($primary-color);
-   .resume-file{
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       width: 100vw;
-       height: 100vh;
-       iframe{
-           width: 800px;
-           height: 100vh;
-       }
-   }
     a{
         text-decoration: none;
         color: set-text-color($primary-color);
@@ -348,6 +337,21 @@ body{
                     transform: translateY(3px);
                 }
             }
+        }
+    }
+}
+
+#resume-body{
+    background-color: white;
+    .resume-file{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        iframe{
+            width: 800px;
+            height: 100vh;
         }
     }
 }
