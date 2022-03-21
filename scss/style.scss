@@ -26,7 +26,10 @@ body{
     &.light .cards{
         border: 1px solid rgb(156, 155, 155);
     }
-    &.dark a, &.dark strong{
+    &.dark a{
+        color: set-text-color($primary-color);
+    } 
+    &.dark strong{
         color: white;
     }
     &.light{
@@ -37,7 +40,7 @@ body{
         border: 1px solid rgb(36, 36, 36);
     }
     &.light a{
-        color: black;
+        color: set-text-color($secondary-color);
     }
     header{
         width: 100%;
