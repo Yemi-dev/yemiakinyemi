@@ -1,0 +1,11 @@
+$primary-color: #246476;
+$secondary-color: #e5eeec;
+$tertiary-color: #03506F;
+
+@function set-text-color($color) {
+    @if (lightness($color) > 40){
+        @return black;
+    }@else {
+        @return #bbc7cab2;
+    }
+}

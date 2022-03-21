@@ -1,0 +1,535 @@
+h1,h2,h3,h4,h5,h6,ul,p{
+    margin: 0;
+}
+body{
+    #explore-header{
+        height: 35vh;
+        background: url('../images/IMG_0661.JPG') no-repeat ;
+        background-size: contain;
+        background-position: center;
+        width: 100%;
+        background-color: rgb(17, 17, 17);
+        border-bottom: 1px solid #333;
+        position: relative;
+        .back{
+            svg{
+                background-color: rgba(0, 0, 0, 0.507);
+                color: rgba(252, 247, 247, 0.788);
+                border-radius: 50%;
+                font-size: 3rem;
+                padding: .5rem;
+                margin: 4rem 3rem;
+            }
+        }
+    }
+    @media (max-width: 560px){
+        #explore-header{
+            .back{
+                svg{
+                    font-size: 2.7rem;
+                    margin: 2.5rem 1rem;
+                }
+            }
+        }
+    }
+    #explore-main{
+        margin: 0 auto;
+        padding: 0 1rem;
+        display: block;
+        max-width: 700px;
+        .top-main{
+            position: relative;
+            .about{
+                position: absolute;
+                top: 30px;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 200px; 
+                    height: 200px;
+                    border: 4px double $primary-color;
+                    border-radius: 50%;
+                    background-color: black;
+                }
+                .name{
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+                .explore-social1,.location,.date{
+                    display: flex;
+                    align-items: center;
+                    opacity: 0.7;
+                    font-weight: light;
+                    svg{
+                        font-size: 1rem;
+                    }
+                    p{
+                        font-size: .6rem;
+                    }
+                }
+                .explore-social1{
+                    justify-content: space-between;
+                    margin-top: .3rem;
+                    .date{
+                        margin-left: .3rem;
+                    }
+                }
+            }
+            @media(max-width: 560px){
+                .about{
+                    top: 40px;
+                    left: 60px;
+                    img{
+                        width: 150px; 
+                        height: 150px;
+                    }
+                    .name{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+            @media(max-width: 420px){
+                .about{
+                    top: 20px;
+                    left: 40px;
+                    img{
+                        width: 100px; 
+                        height: 100px;
+                    }
+                    .name{
+                        font-size: 1rem;
+                    }
+                }
+            }
+            .main-btns{
+                width:fit-content;
+                margin-left: auto;
+                margin-top: 1rem;
+                display: flex;
+                align-items: center;
+                a{
+                    svg{
+                        font-size: 2rem;
+                        color: $primary-color;
+                        border: 1px solid $primary-color;
+                        border-radius: 50%;
+                        padding: .3rem;
+                        margin-right: 1rem;
+                        font-weight: bold;
+                        transition: 1s all;
+                        &:hover{
+                            background-color: $primary-color;
+                            color: white;
+                        }
+                }}
+                .resume{
+                    color: white;
+                    background-color: $primary-color;
+                    border: 2px solid $primary-color;
+                    text-decoration: none;
+                    transition: .5s all;
+                    padding: .3rem 1rem;
+                    border-radius: 5px;
+                    &:hover{
+                        background-color: transparent;
+                        color: $primary-color;
+                    }
+                }
+            }
+            @media (max-width:560px) {
+                .main-btns{
+                    a{
+                        svg{
+                            font-size: 1.8rem;
+                        }
+                    }
+                    .resume{
+                        font-size: .8rem;
+                    }
+                }
+            }
+            @media (max-width:420px) {
+                .main-btns{
+                    a{
+                        svg{
+                            font-size: 1.8rem;
+                        }
+                    }
+                    .resume{
+                        font-size: .6rem;
+                        padding: .2rem .5rem;
+                    }
+                }
+            }
+            .about-info{
+                margin-top: 160px;
+                .about-content{
+                    font-size: 1rem;
+                    line-height: 1.5;
+                    margin-bottom: 1rem;
+                    margin-right: 1rem;
+                    .bio{
+                        font-weight: bold;
+                        font-size: 1.4rem;
+                        margin-bottom: 1rem;
+                        span{
+                            margin-left: 1rem;
+                        }
+                    }
+                    small{
+                        color: $primary-color;
+                        font-size: .7rem;
+                    }
+                    p{
+                        text-align: justify;
+                        font-size: 1.3rem;
+                        line-height: 1.8;
+                    }
+                }
+                .explore-social2{
+                    a{
+                        text-decoration: none;
+                        svg{
+                            color: $primary-color;
+                            font-size: 1.5rem;
+                            margin-right: .5rem;
+                            transition: .5s all;
+                            &:hover{
+                                opacity: 0.6;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+            @media (max-width:560px) {
+                .about-info{
+                    margin-top: 130px;
+                   
+                    .about-content{
+                        .bio{
+                            font-size: 1rem;
+                        }
+                        p{
+                            font-size:.8rem;
+                            line-height: 2.0;
+                        }
+                    }
+                    .explore-social2{
+                        a{
+                            svg{
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                }
+            }
+            @media (max-width:420px) {
+                .about-info{
+                    margin-top: 80px;
+                   
+                    .about-content{
+                        .bio{
+                            font-size: .8rem;
+                        }
+                        p{
+                            font-size:.7rem;
+                        }
+                    }
+                    .explore-social2{
+                        a{
+                            svg{
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+            }
+
+            .skills-section{
+                margin: 10rem auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                svg{
+                    color: $primary-color;
+                }
+                h3{
+                    width: 35%;
+                }
+            }
+            .skills-section li{
+                list-style: none;
+                margin: 1.5rem 0;
+            }
+            @media (max-width:560px) {
+                .skills-section{
+                    h3{
+                        font-size: 1rem;
+                    }
+                }
+                .skills-section li{
+                    font-size: .8rem;
+                }
+            }
+            @media (max-width:420px) {
+                .skills-section{
+                    h3{
+                        font-size: .8rem;
+                    }
+                }
+                .skills-section li{
+                    font-size: .6rem;
+                }
+            }
+            @media (max-width:320px) {
+                .skills-section{
+                    h3{
+                        width: 100%;
+                        font-size: .8rem;
+                        margin-bottom: 3rem;
+                    }
+                    .tools ul{
+                        padding-right:2rem;
+                    }
+                }
+                .skills-section li{
+                    font-size: .6rem;
+                }
+            }
+            .portfolio-section{
+                margin: 8rem 0;
+                h3{
+                    display: flex;
+                    align-items: center;
+                    svg{
+                        color: $primary-color;
+                        margin-left: .5rem;
+                        transition: .3s all;
+                        cursor: pointer;
+                        &:hover{
+                            transform: translateY(5px);
+                        }
+                    }
+                }
+                @media (max-width: 560px) {
+                    h3{
+                        font-size: 1rem;
+                    }
+                }
+                .portfolio{
+                    margin: 5rem 0;
+                    .cards{
+                        width: 100%;
+                        height: fit-content;
+                        border-radius: 10px;
+                        margin: 5rem auto ;
+                        padding: 1rem;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .card-image{
+                            width: 35%;
+                            height: auto;
+                            text-align: center;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                        .card-images{
+                            display: flex;
+                            flex-direction: column;
+                            width: 65%;
+                           h5{
+                               margin: 0 1rem;
+                           }
+                        .card-body{
+                            max-height: 100px;
+                            overflow-y: scroll;
+                            text-align: justify;
+                            line-height: 1.5;
+                            font-size: .8rem;
+                        }
+                        .card-footer{
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-around;
+                            align-items: center;
+                            width: 60%;
+                            padding: 1rem;
+                            a{
+                                display: flex;
+                                align-items: center;
+                                color: white;
+                                text-decoration: none;
+                                transition: .5s all;
+                                border: 1px solid $primary-color;
+                                background-color: $primary-color;
+                                padding: .3rem;
+                                border-radius: 2px;
+                                margin-bottom: .5rem;
+                                svg{
+                                    font-size: .8rem;
+                                    margin-right: .2rem;
+                                }
+                                h6{
+                                    font-size: .6rem;
+                                }
+                                &:hover{
+                                    opacity: 0.5;
+                                }
+                            }
+                        }
+                    }
+                    }
+                }
+                .card1,.card3{
+                    border-right-width: 8px;
+                    border-left-width: 1px;
+                }
+                .card2,.card4{
+                    flex-direction: row-reverse;
+                    border-left-width: 8px;
+                    border-right-width: 1px;
+                }
+                @media (max-width:560px){
+                    .portfolio{
+                        .cards{
+                            width: 100%;
+                            margin: 5rem auto;
+                           .card-images{
+                            .card-body{
+                                font-size: .8rem;
+                            }
+                            .card-footer{
+                                justify-content: space-evenly;
+                                width: 100%;
+                                padding: 1rem;
+                                a{
+                                    display: flex;
+                                    align-items: center;
+                                    text-decoration: none;
+                                    svg{
+                                        font-size: .6rem;
+                                    }
+                                    h5{
+                                        font-size: .4rem;
+                                    }
+                                }
+                            }
+                           }
+                        }
+                    }
+                }
+                @media (max-width:420px){
+                    .portfolio{
+                        .cards{
+                            margin: 5rem auto ;
+                            padding: 1rem;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-items: center;
+                            .card-image{
+                                width:100%;
+                                img{
+                                    margin: 2rem auto;
+                                }
+                            }
+                           .card-images{
+                               width: 100%;
+                            .card-body{
+                                font-size: .8rem;
+                            }
+                            .card-footer{
+                                justify-content: start;
+                                width: 100%;
+                                padding: 1rem;
+                                a{
+                                    display: flex;
+                                    align-items: center;
+                                    text-decoration: none;
+                                    margin-right: .5rem;
+                                    svg{
+                                        font-size: .6rem;
+                                    }
+                                    h5{
+                                        font-size: .4rem;
+                                    }
+                                }
+                            }
+                           }
+                        }
+                    }
+                }
+                .repo{
+                    text-decoration: none;
+                    padding: .3rem 1rem;
+                    color: white;
+                    background-color: $primary-color;
+                    border-radius: 5px;
+                    transition: .5s all;
+                    border: 1px solid $primary-color;
+                    margin-top: -50px;
+                    font-size: 1rem;
+                    &:hover{
+                        background-color: transparent;
+                        color: $primary-color;
+                    }
+                }
+                @media (max-width:560px){
+                    .repo{
+                        margin: 1rem 0;
+                        font-size: .8rem;
+                    }
+                }
+                @media (max-width:420px){
+                    .repo{
+                        font-size: .6rem;
+                    }
+                }
+            }
+                
+            
+           
+            .go-top{
+                position: fixed;
+                bottom: 130px;
+                right: 60px;
+                display: none;
+               img{
+                 width: 30px;
+                 height: auto;
+                 border-radius: 50%;
+               }
+            }
+            @media (max-width:560px) {
+                .go-top{
+                    right: 20px;
+                    img{
+                        width: 20px;
+                    }
+                }
+               
+            }
+
+           #explore-footer{
+               width: 100%;
+               padding: 3rem;
+               text-align: center;
+               margin: 1rem auto;
+               font-size: .6rem;
+               .foot-note2{
+                   font-size: .8rem;
+                   margin-left: .3rem;
+               }
+           }
+        }
+    }
+   
+  
