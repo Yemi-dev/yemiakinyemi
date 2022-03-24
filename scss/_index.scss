@@ -15,4 +15,9 @@
         padding: 0 1rem;
     }
 }
+@media (max-width:480px) {
+    #index-body{
+       border-width: 5px;
+    }
+}
 
