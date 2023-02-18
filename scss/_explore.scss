@@ -323,19 +323,22 @@ body{
                     margin: 5rem 0;
                     .cards{
                         width: 100%;
+                        
                         height: fit-content;
                         border-radius: 10px;
                         margin: 5rem auto ;
-                        padding: 1rem;
+                        padding: 2rem 1rem;
                         display: flex;
+                        flex-direction: column;
                         justify-content: space-between;
                         align-items: center;
                         .card-image{
-                            width: 35%;
+                            width: 100%;
                             height: auto;
                             text-align: center;
                             img{
-                                width: 100%;
+                                width: 70%;
+                                margin: 0 auto;
                             }
                         }
                         .card-images{
@@ -346,8 +349,6 @@ body{
                                margin: 0 1rem;
                            }
                         .card-body{
-                            max-height: 100px;
-                            overflow-y: scroll;
                             text-align: justify;
                             line-height: 1.5;
                             font-size: .8rem;
@@ -355,9 +356,10 @@ body{
                         .card-footer{
                             display: flex;
                             flex-wrap: wrap;
-                            justify-content: space-around;
+                            justify-content: center;
                             align-items: center;
-                            width: 60%;
+                            gap: 20px;
+                            width: 100%;
                             padding: 1rem;
                             a{
                                 display: flex;
@@ -367,8 +369,8 @@ body{
                                 transition: .5s all;
                                 border: 1px solid $primary-color;
                                 background-color: $primary-color;
-                                padding: .3rem;
-                                border-radius: 2px;
+                                padding: .7rem .8rem;
+                                border-radius: 5px;
                                 margin-bottom: .5rem;
                                 svg{
                                     font-size: .8rem;
