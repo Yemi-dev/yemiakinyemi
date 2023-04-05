@@ -326,13 +326,13 @@ body #explore-main .portfolio-section .portfolio .cards .card-image {
   text-align: center;
 }
 body #explore-main .portfolio-section .portfolio .cards .card-image img {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
 }
 body #explore-main .portfolio-section .portfolio .cards .card-images {
   display: flex;
   flex-direction: column;
-  width: 65%;
+  width: 80%;
 }
 body #explore-main .portfolio-section .portfolio .cards .card-images h5 {
   margin: 0 1rem;

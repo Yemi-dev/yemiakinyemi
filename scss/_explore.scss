@@ -323,7 +323,6 @@ body{
                     margin: 5rem 0;
                     .cards{
                         width: 100%;
-                        
                         height: fit-content;
                         border-radius: 10px;
                         margin: 5rem auto ;
@@ -337,14 +336,14 @@ body{
                             height: auto;
                             text-align: center;
                             img{
-                                width: 70%;
+                                width: 90%;
                                 margin: 0 auto;
                             }
                         }
                         .card-images{
                             display: flex;
                             flex-direction: column;
-                            width: 65%;
+                            width: 80%;
                            h5{
                                margin: 0 1rem;
                            }
